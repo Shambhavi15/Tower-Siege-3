@@ -67,7 +67,7 @@ function setup() {
   //level three
   blocks9 = new Block(700,95,30,40);
 
-  //ball  with slings
+  //ball with slings
   ball = Bodies.circle(200,200,20);
   World.add(world,ball);
 
@@ -97,6 +97,8 @@ function draw() {
   stand2.display();
   strokeWeight(2);
   stroke(15);
+  
+  //level one
   fill(0,79,173);
   block1.display();
   block1.score();
@@ -114,6 +116,8 @@ function draw() {
   block7.score();
   block8.display();
   block8.score();
+  
+  //level two
   fill("green");
   block9.display();
   block9.score();
@@ -127,6 +131,8 @@ function draw() {
   block13.score();
   block14.display();
   block14.score();
+  
+  //level three
   fill(255,233,37);  
   block15.display();
   block15.score();
@@ -136,36 +142,45 @@ function draw() {
   block17.score();
   block18.display();
   block18.score();
+  
+  //level four 
   fill(251,127,48);  
   block19.display();
   block19.score();
   block20.display();
   block20.score();
+  
+  //level five
   fill("red");
   block21.display();
   block21.score();
 
+  //level one 
   fill(255,233,37);
   blocks1.display();
-  block1.score();
+  blocks1.score();
   blocks2.display();
-  block2.score();
+  blocks2.score();
   blocks3.display();
-  block3.score();
+  blocks3.score();
   blocks4.display();
-  block4.score();
+  blocks4.score();
   blocks5.display();
-  block5.score();
+  blocks5.score();
+  
+  //level two 
   fill(251,127,48);
   blocks6.display();
-  block6.score();
+  blocks6.score();
   blocks7.display();
-  block7.score();
+  blocks7.score();
   blocks8.display();
-  block8.score();
+  blocks8.score();
+  
+  //level three
   fill("red")
   blocks9.display();
-  block9.score();
+  blocks9.score();
 
   imageMode(CENTER)
   image(polygon_img ,ball.position.x-50,ball.position.y-80,40,40);
